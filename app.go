@@ -11,7 +11,7 @@ import (
     "strconv"
     "encoding/json"
 
-    "github.com/ngandalf/models"
+    "github.com/ngandalf/goapi/models"
 
     "github.com/gorilla/mux"
     _ "github.com/lib/pq"
