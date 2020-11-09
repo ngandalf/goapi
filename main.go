@@ -3,6 +3,7 @@
 package main
 
 import "os"
+import "github.com/ngandalf/goapi/models"
 
 func main() {
 	a := App{}
