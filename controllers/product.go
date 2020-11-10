@@ -1,5 +1,9 @@
 package controllers
 
+import (
+    "github.com/ngandalf/goapi/app"
+)
+
 
 func (a *App) getProduct(w http.ResponseWriter, r *http.Request) {
     vars := mux.Vars(r)
