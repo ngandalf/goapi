@@ -49,7 +49,7 @@ func (a *App) getProduct(w http.ResponseWriter, r *http.Request) {
         return
     }
 
-    p := models.product{ID: id}
+    p := models.Product{ID: id}
     if err := p.getProduct(a.DB); err != nil {
         switch err {
         case sql.ErrNoRows:
