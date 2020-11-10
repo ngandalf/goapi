@@ -50,7 +50,7 @@ func (a *App) getProduct(w http.ResponseWriter, r *http.Request) {
     }
 
     p := models.Product{ID: id}
-    if err := p.getProduct(a.DB); err != nil {
+    if err := p.GetProduct(a.DB); err != nil {
         switch err {
         case sql.ErrNoRows:
             respondWithError(w, http.StatusNotFound, "Product not found")
